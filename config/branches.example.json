@@ -1,0 +1,11 @@
+[
+  { "code": "NZ-01", "name": "الفرع 01", "manager": "مدير الفرع 01", "username": "manager1" },
+  { "code": "NZ-02", "name": "الفرع 02", "manager": "مدير الفرع 02", "username": "manager2" },
+  { "code": "NZ-03", "name": "الفرع 03", "manager": "مدير الفرع 03", "username": "manager3" },
+  { "code": "NZ-04", "name": "الفرع 04", "manager": "مدير الفرع 04", "username": "manager4" },
+  { "code": "NZ-05", "name": "الفرع 05", "manager": "مدير الفرع 05", "username": "manager5" },
+  { "code": "NZ-06", "name": "الفرع 06", "manager": "مدير الفرع 06", "username": "manager6" },
+  { "code": "NZ-07", "name": "الفرع 07", "manager": "مدير الفرع 07", "username": "manager7" },
+  { "code": "NZ-08", "name": "الفرع 08", "manager": "مدير الفرع 08", "username": "manager8" },
+  { "code": "NZ-09", "name": "الفرع 09", "manager": "مدير الفرع 09", "username": "manager9" }
+]
