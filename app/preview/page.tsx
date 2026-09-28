@@ -1,9 +1,7 @@
-import { notFound } from 'next/navigation';
 import OperationsDashboard from '@/components/OperationsDashboard';
 import Nav from '@/components/Nav';
 import { DEFAULT_WEIGHTS, BranchMetrics } from '@/lib/evaluation';
 export default function Preview() {
-  if (process.env.ENABLE_PREVIEW !== 'true') notFound();
   const rows: BranchMetrics[] = Array.from({length:9},(_,i)=>({
     id:`demo-${i+1}`,name:`الفرع ${String(i+1).padStart(2,'0')}`,code:`NZ-${String(i+1).padStart(2,'0')}`,manager_name:`مدير الفرع ${i+1}`,
     employees:6,recorded:i===8?4:6,present:[6,5,6,6,5,6,5,6,4][i],absent:0,late:i===1?1:0,
