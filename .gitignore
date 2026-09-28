@@ -10,3 +10,5 @@ next-env.d.ts
 *.private.json
 playwright-report/
 test-results/
+.vercel
+.env*
