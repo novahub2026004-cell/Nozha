@@ -1,0 +1,22 @@
+@font-face { font-family: "Cairo Variable"; font-style: normal; font-weight: 200 1000; font-display: swap; src: url("/fonts/cairo-arabic-wght-normal.woff2") format("woff2"); unicode-range: U+0600-06FF,U+0750-077F,U+0870-089F,U+08A0-08FF,U+200C-200E,U+FB50-FDFF,U+FE70-FEFC; }
+@font-face { font-family: "Cairo Variable"; font-style: normal; font-weight: 200 1000; font-display: swap; src: url("/fonts/cairo-latin-wght-normal.woff2") format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@tailwind base; @tailwind components; @tailwind utilities;
+:root { color-scheme: light; --font-cairo: "Cairo Variable"; --ink: #172d49; --muted: #6b7e96; --primary: #2563eb; --canvas: #f3f6fb; --line: #e5ecf5; }
+html, body { font-family: "Cairo Variable", sans-serif; }
+body { min-height: 100vh; background: var(--canvas); color: var(--ink); }
+button, input, select, textarea { font-family: "Cairo Variable", sans-serif; }
+input[type="checkbox"] { accent-color: var(--primary); width: 17px; height: 17px; }
+::selection { background: #dbeafe; color: #172d49; }
+.app-main { max-width: 1600px; margin: 0 auto; padding: 24px 20px; }
+.panel { background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 22px; box-shadow: 0 6px 24px #253e6805; }
+.field { border: 1px solid #dbe4f0; border-radius: 11px; background: #fff; padding: 10px 12px; font-size: 14px; outline: none; min-width: 0; }
+.field:focus { border-color: #2563eb; box-shadow: 0 0 0 3px #2563eb14; }
+.primary-btn { border-radius: 11px; background: #2563eb; color: #fff; padding: 10px 17px; font-size: 14px; font-weight: 700; transition: background .15s; }
+.primary-btn:hover { background: #1d4ed8; }
+.primary-btn:disabled { opacity: .5; }
+main table thead { background: #f5f8fc; color: #657893; }
+main table th { font-size: 12px; padding: 12px!important; }
+main table td { padding: 13px 12px!important; border-color: var(--line); }
+main table tbody tr:hover { background: #fafcff; }
+@media(min-width:1024px) { .app-main { margin-right: 232px; padding: 28px 32px; } }
+@media(max-width:640px) { .app-main { padding: 18px 12px; } .panel { padding: 16px; border-radius: 16px; } }
